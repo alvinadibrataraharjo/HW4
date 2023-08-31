@@ -4,7 +4,7 @@ let arrayRandom = [];
 for(let i = 0 ; i < 100 ; i++){
     arrayRandom.push(Math.floor(Math.random()*51))
 }
-console.log(arrayRandom)
+console.log(arrayRandom, ' Array dengan jumlah index 100 ')
 
 //pecah array genap dan ganjil
 const indexGenap = []
@@ -24,11 +24,10 @@ for (let x in arrayRandom){
     }
 }
 
-console.log(indexGenap.sort())
-console.log(indexGanjil.sort())
+console.log(indexGenap, ' Array genap dengan jumlah index 50')
+console.log(indexGanjil, ' Array ganjil dengan jumlah index 50')
 
 //find min 
-
 function findMin(arr){
     let min = arr[0]
     for(let i = 1 ; i < arr.length; i++){
@@ -67,8 +66,6 @@ function avg(arr){
 }
 
 //perbandingan
-
-
 function perbandingan(ganjil, genap){
 
     const arrayGanjil =[]
